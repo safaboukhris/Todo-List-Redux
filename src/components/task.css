@@ -1,0 +1,62 @@
+.container{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    border: 2px solid #cf6a87;
+    width: 250px;
+    height: 100px;
+    background-image:linear-gradient(135deg, #f0a170 , #fcf890); 
+    box-shadow: 2px 2px 8px #f8c62a;
+    margin-left:60px;
+    margin-top: 80px;
+    display: inline-block;
+    position:relative;
+    color: #413f3b ;
+}
+.container input{
+    width: 150px;
+    border: 2px solid #cf6a87;
+    background-color: #fde3e3;
+    border-radius: 5px;
+    color: #4b4b4b;
+}
+.container input:focus{
+    outline: none;
+    border: 2px solid #cf6a87;
+    background-color: #cf6a87;
+    color: #fde6e6 ;
+    border-radius: 5px;
+    padding: 5px;
+} 
+.container button{
+    margin-left: 5px;
+    width: 10px;
+    border: none;
+    margin: 0 0.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    right: 5px;
+}
+.buttons{
+    width: 100px;
+    display: flex;
+    display: inline;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.span{
+    line-height: 1.5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.inputUpdate{
+    margin-top: 25px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+
