@@ -37,3 +37,8 @@ export const update_task= (id, description)=>{
         payload: id,description
     }
 }
+export const show_not_completed=()=>{
+    return{
+        type:"SHOW_NOT_COMPLETED",
+    }
+}

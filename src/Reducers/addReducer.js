@@ -37,6 +37,11 @@ const addReducer = ( state = initialState , action ) => {
                     tasks:state.tasks.map(task=> task.id===action.payload.id?
                         {...task,description: action.payload.description}: task),
                 };
+            case 'SHOW_NOT_COMPLETED':
+                return {
+                    ...state,
+                    filter:'SHOW_NOT_COMPLETED',
+                }
             default : 
                 return state;
         }

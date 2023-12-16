@@ -28,7 +28,10 @@ const AddTask = () => {
     const handleShowAll=()=>{
         dispatch(filter_tasks('SHOW_ALL'));
     }
-
+        // dispatch action to show  Not completed tasks
+    const handleNotCompleted=()=>{
+        dispatch(filter_tasks('SHOW_NOT_COMPLETED'));
+    }
 
     return (
         <div >
@@ -45,6 +48,7 @@ const AddTask = () => {
             </div>
             <div className='class-btn'>
                 <button type='button' onClick={handleCompleted}>Completed</button>
+                <button type='button' onClick={handleNotCompleted}> Not Completed</button>
                 <button type='button' onClick={handleShowAll}>All Tasks</button>
             </div>
         </div>

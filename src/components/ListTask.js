@@ -8,6 +8,8 @@ const ListTask = () => {
         const tasks = useSelector(state=>{
             if (state.addReducer.filter === 'SHOW_COMPLETED') {
                 return state.addReducer.tasks.filter(task => task.isDone);
+            }else if(state.addReducer.filter === 'SHOW_NOT_COMPLETED'){
+                return state.addReducer.tasks.filter(task =>!task.isDone);
             }
             return state.addReducer.tasks;
         });
